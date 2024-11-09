@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dog facts API</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    button:hover {
+        background-color: #555;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    footer a {
+        color: #333;
+    }
+</style>
+
+<body>
+    <h1>dog facts API</h1>
+    <p>Click the button to get a random dog fact</p>
+    <button onclick="getDogFact()">Get Dog Fact</button>
+    <p id="dogFact"></p>
+    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a" alt="dog" width="300">
+    <footer>
+        <p>API provided by <a href="https://http://localhost:3000/facts">dog-facts-api.com</a></p>
+    </footer>
+</body>
+
+<script>
+    function getDogFact() {
+        fetch('http://localhost:3000/facts')
+            .then(response => response.json())
+            .then(data => {
+                // Access the 'facts' array in the 'data' object
+                const factsArray = data.facts;
+                const randomFact = factsArray[Math.floor(Math.random() * factsArray.length)];
+
+                // Update the content with the selected random fact
+                document.getElementById('dogFact').innerText = randomFact;
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    }
+</script>
+
+
+</html>

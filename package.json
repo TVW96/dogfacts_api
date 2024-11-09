@@ -1,0 +1,30 @@
+{
+  "name": "dogfacts_api",
+  "version": "1.0.0",
+  "description": "true facts about dogs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node app.js",
+    "open": "open index.html",
+    "start": "concurrently \"npm run server\" \"npm run open\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TVW96/dogfacts_api.git"
+  },
+  "author": "Troy Washington",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TVW96/dogfacts_api/issues"
+  },
+  "homepage": "https://github.com/TVW96/dogfacts_api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "open": "^10.1.0"
+  }
+}
