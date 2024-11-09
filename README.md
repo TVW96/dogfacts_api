@@ -1,11 +1,11 @@
-# dogfacts_api 
+# Dog Facts API
+A simple node.js and express.js application.
 
-simple Node.js and Express.js server and web application. 
+## Instructions:
+Execute following lines of code to run application:
 
-## Instructions
-Execute the following lines of code to run and test this web application:
-
-change directories to root directory and run:
+1.
 ``` npm install ```
-&
+
+2.
 ``` npm start ```
