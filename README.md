@@ -1,7 +1,7 @@
 # Dog Facts API & Web Interface
 environment: Express.js, HTML
 ### This code implements a simple REST API and serves interesting facts about dogs on a Web Interface.
-## API
+## API:
 #### Server Setup:
 ```
 const express = require('express');
@@ -36,7 +36,7 @@ app.listen(port, () => {
 ```
 The server listens on port 3000 and logs a confirmation message.
 
-## Web interface
+## Web interface:
 #### HTML Structure: 
 The body contains: 
 - A header.
