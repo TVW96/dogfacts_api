@@ -43,7 +43,6 @@ The body contains:
 - An interactive button to trigger fact retreival.
 - A placeholder paragraph tag for displayign facts.
 - A decorative dog image.
-- A footer with API attribution.
 
 #### JavaScript Functionality: 
 The ``gettDogFact()`` function handles the API interaction: 
